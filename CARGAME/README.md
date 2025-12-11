@@ -24,7 +24,7 @@ CarGame/
 ├── model/
 │   └── CNNmodel.pth          # Saved pretrained CNN agent
 │
-├── plots/                    # Reward curves
+├── plots/                    # Score curves
 │   ├── training_plot.png
 │   └── testing_plot.png
 │
