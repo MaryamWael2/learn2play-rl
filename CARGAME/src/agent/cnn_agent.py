@@ -2,7 +2,7 @@ import torch
 import random
 import numpy as np
 from collections import deque
-from src.training.utils import resize_image_nn
+from CarGame.src.scripts.utils import resize_image_nn
 
 class CNNAgent:
     def __init__(self, model, trainer, eps, eps_min, eps_decay, gamma, max_memory, batch_size):

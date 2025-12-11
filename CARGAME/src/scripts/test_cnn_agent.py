@@ -1,9 +1,9 @@
 import matplotlib.pyplot as plt
 import os
-from src.agents.cnn_agent import CNNAgent
-from src.agents.cnn_model import CNN
+from src.agent.cnn_agent import CNNAgent
+from src.agent.cnn_model import CNN
 from src.env.car_env_ai import CarGameAI
-from src.training.utils import save_plot, setup_logger
+from CarGame.src.scripts.utils import save_plot, setup_logger
 
 def main():
     model = CNN(4, 3).load()

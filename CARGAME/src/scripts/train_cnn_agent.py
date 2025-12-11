@@ -1,10 +1,10 @@
 import matplotlib.pyplot as plt
 import os
-from src.agents.cnn_agent import CNNAgent
-from src.agents.cnn_model import CNN
-from src.training.trainer import QTrainer
-from src.env.car_env import CarGameAI
-from src.training.utils import save_plot, setup_logger
+from src.agent.cnn_agent import CNNAgent
+from src.agent.cnn_model import CNN
+from CarGame.src.agent.qtrainer import QTrainer
+from src.env.car_env_ai import CarGameAI
+from CarGame.src.scripts.utils import save_plot, setup_logger
 
 def main():
     epsilon = 1.0
