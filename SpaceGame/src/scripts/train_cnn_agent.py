@@ -53,7 +53,7 @@ def main():
 
             state_old = state_new
             
-            save_side_by_side(state_old, f"game_frames/game_{agent.n_games}_step_{step}_move_{final_move}_reward_{reward}.png")
+            # save_side_by_side(state_old, f"game_frames/game_{agent.n_games}_step_{step}_move_{final_move}_reward_{reward}.png")
             step +=1
 
         agent.n_games += 1

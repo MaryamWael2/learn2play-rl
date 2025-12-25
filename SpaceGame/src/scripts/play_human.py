@@ -2,7 +2,7 @@ from src.env.space_game_human import SpaceGame
 import pygame
 
 if __name__ == '__main__':  
-    game = SpaceGame(900, 600, difficulty=6)
+    game = SpaceGame(900, 600, difficulty=3)
     
     while True:  
         quit, score = game.play()
