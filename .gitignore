@@ -8,9 +8,5 @@ __pycache__/
 venv/
 .env/
 
-# Model artifacts
-models/
-*.pth
-
 # IDE configs
 .vscode/
