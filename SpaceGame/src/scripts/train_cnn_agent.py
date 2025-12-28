@@ -25,7 +25,7 @@ def main():
     total_score = 0
     record = 0
 
-    logger = setup_logger()
+    logger = setup_logger("logs", "training.log")
     logger.info("Training started.")
 
     while True:
@@ -73,7 +73,7 @@ def main():
         plot_mean_scores.append(mean_score)
 
         logger.info(f"Mean Score: {mean_score}")
-        save_plot(plot_scores, plot_mean_scores)
+        save_plot(plot_scores, plot_mean_scores,"plots", "testing_plot.png")
 
         if agent.n_games % 50 == 0:
             last_50 = plot_scores[-50:]

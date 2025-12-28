@@ -65,10 +65,10 @@ def save_side_by_side(imgs, save_path):
     plt.savefig(save_path, bbox_inches="tight", pad_inches=0)
     plt.close()
     
-def setup_logger(log_dir = "train_logs"):
+def setup_logger(log_dir = "train_logs", file_name="training.log"):
     os.makedirs(log_dir, exist_ok=True)
 
-    log_path = os.path.join(log_dir, "training.log")
+    log_path = os.path.join(log_dir, file_name)
 
     logger = logging.getLogger("trainer_logger")
     logger.setLevel(logging.INFO)
@@ -84,7 +84,7 @@ def setup_logger(log_dir = "train_logs"):
 
     return logger
 
-def save_plot(scores, mean_scores, plot_dir = "train_plots"):
+def save_plot(scores, mean_scores, plot_dir = "train_plots", img_name="training_plot.png"):
     os.makedirs(plot_dir, exist_ok=True)
 
     plt.figure(figsize=(10, 5))
@@ -95,6 +95,6 @@ def save_plot(scores, mean_scores, plot_dir = "train_plots"):
     plt.ylabel("Score")
     plt.title("Training Progress")
 
-    path = os.path.join(plot_dir, "training_plot.png")
+    path = os.path.join(plot_dir, img_name)
     plt.savefig(path)
     plt.close()

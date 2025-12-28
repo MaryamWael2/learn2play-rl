@@ -25,7 +25,7 @@ def main():
     total_score = 0
     record = 0
 
-    logger = setup_logger()
+    logger = setup_logger("logs", "training.log")
     logger.info("Training started.")
 
     while True:
@@ -69,7 +69,7 @@ def main():
         plot_mean_scores.append(mean_score)
 
         logger.info(f"Mean Score: {mean_score}")
-        save_plot(plot_scores, plot_mean_scores)
+        save_plot(plot_scores, plot_mean_scores,"plots", "testing_plot.png")
 
         if agent.n_games % 50 == 0:
             last_50 = plot_scores[-50:]
@@ -81,7 +81,7 @@ def main():
 
 if __name__ == '__main__':
     os.environ["KMP_DUPLICATE_LIB_OK"] = "TRUE"
-    os.makedirs("train_logs", exist_ok=True)
-    os.makedirs("train_plots", exist_ok=True)
+    os.makedirs("logs", exist_ok=True)
+    os.makedirs("plots", exist_ok=True)
     plt.ion()
     main()
