@@ -58,6 +58,6 @@ For full details, see each project’s README:
 
 Issues and pull requests are welcome. If you’re adding a new game:
 
-* Please follow the existing structure (logs/model/plots/src/scripts)
+* Please follow the existing structure (logs/model/plots/src)
 * Please provide a dedicated `requirements.txt`
 * Please include a project-level README with run/train/test instructions
