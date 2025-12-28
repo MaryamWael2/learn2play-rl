@@ -11,26 +11,30 @@ Each game includes:
 ## 📦 Projects in this Repo
 
 ### 🚗 CarGame — Self-Driving Car (Obstacle Avoidance)
-A 2D driving environment where an AI agent learns to steer and avoid obstacles using frame-based observations. :contentReference[oaicite:0]{index=0}
+A 2D driving environment where an AI agent learns to steer and avoid obstacles using frame-based observations.
+
+![Car Game Preview](car_game_preview.png)
 
 **Key features**
 - Discrete actions: left / right / do nothing
 - Rewards for surviving and passing obstacles; penalties for collisions
 - Human-playable mode (keyboard)
 
-📍 Location: `CARGAME/CarGame/` :contentReference[oaicite:1]{index=1}
+📍 Location: `CarGame/`
 
 ---
 
 ### 🚀 SpaceGame — Arcade Space Shooter (Avoid + Shoot)
-A 2D space arcade game where an AI agent learns to move, avoid threats, and shoot using CNN-processed visual frames. :contentReference[oaicite:2]{index=2}
+A 2D space arcade game where an AI agent learns to move, avoid threats, and shoot using CNN-processed visual frames.
+
+![Space Game Preview](space_game_preview.png)
 
 **Key features**
 - Discrete actions: move left / move right / shoot / do nothing
 - Rewards for eliminating targets; penalties for collisions and failures
 - Human-playable mode (keyboard)
 
-📍 Location: `SpaceGame/` :contentReference[oaicite:3]{index=3}
+📍 Location: `SpaceGame/` 
 
 ---
 
@@ -45,7 +49,7 @@ Both projects follow the same general pattern:
 
 For full details, see each project’s README:
 
-* `CARGAME/CarGame/README.md` 
+* `CarGame/README.md` 
 * `SpaceGame/README.md` 
 
 ---
@@ -57,5 +61,3 @@ Issues and pull requests are welcome. If you’re adding a new game:
 * Please follow the existing structure (logs/model/plots/src/scripts)
 * Please provide a dedicated `requirements.txt`
 * Please include a project-level README with run/train/test instructions
-
-```
